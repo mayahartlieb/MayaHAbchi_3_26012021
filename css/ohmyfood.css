@@ -1,0 +1,22 @@
+/*
+MA PALETTE DE COULEURS :
+Couleur primaire   #9356DC
+Couleur secondaire #FF79DA
+Couleur Tertaire   #99E2D0
+*/
+
+/*Mes variables pour les couleurs*/
+:root{
+--primary-color: #9356DC;
+--secondary-color: #FF79DA;
+--tertiary-color: #99E2D0;
+}
+
+/*
+Mes Polices
+Logo et titres: Shrikhand
+Texte: Roboto
+*/
+
+
+
