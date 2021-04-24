@@ -30,3 +30,110 @@ Texte: Roboto
     font: 32px Arial, sans-serif;
   }
 
+  
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+ul {
+	/*I want to remove all the bullet points */
+	list-style-type: none; 
+
+}
+
+a {
+	/*I want to remove my underlines*/
+	text-decoration: none;
+}
+
+
+
+img {
+
+	/*I want my images to fit in the container*/
+	width: 100%;
+}
+
+
+
+.wrapper{
+
+	max-width: 780px;px; /*Un point d'arrêt fluide */
+	margin: 0px 50px; /*Pour centrer les éléments: 
+	je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+	
+}
+
+
+
+
+
+/*----------mainContent-----------*/
+
+
+.card{
+
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 2rem;
+	border: 6px solid var(--body-background-color);
+	cursor: pointer;
+	/*ease-in - specifies a transition effect with a slow start*/
+	transition: transform 200ms ease-in;
+	/*Transition effects are animation options*/
+	background: var(--body-background-color);
+	min-height: 215px;
+}
+
+
+.wrapper-grid div.card__body.laPaletteDuGout{
+
+	background-image: url(../images/restaurants/laPaletteDuGout.jpg);
+	object-fit: cover;
+	height:100%;
+	position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	
+}
+
+
+.wrapper-grid div.card__body.laNoteEnchantee{
+
+	background-image: url(../images/restaurants/laNoteEnchantee.jpg);
+	object-fit: cover;
+	height:100%;
+	position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	
+}
+
+.wrapper-grid div.card__body.ALaFrancaise{
+
+	background-image: url(../images/restaurants/ALaFrancaise.jpg);
+	object-fit: cover;
+	height:100%;
+	position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	
+}
+
+.wrapper-grid div.card__body.LeDeliceDesSens{
+
+	background-image: url(../images/restaurants/leDeliceDesSens.jpg);
+	object-fit: cover;
+	height:100%;
+	position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	
+}
