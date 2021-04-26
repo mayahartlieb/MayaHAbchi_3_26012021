@@ -7,10 +7,14 @@ Couleur Tertaire   #99E2D0
 
 /*Mes variables pour les couleurs*/
 :root{
+
 --main-background-color: #FFFFFF;
 --primary-color: #9356DC;
 --secondary-color: #FF79DA;
 --tertiary-color: #99E2D0;
+--border-color:#f2f2f2;
+--text-color:#606060;
+
 }
 
 /*
@@ -19,17 +23,13 @@ Logo et titres: Shrikhand
 Texte: Roboto
 */
 
-.circle {
-    border-radius: 50%;
-    width: 34px;
-    height: 34px;
-    padding: 10px;
-    background: #fff;
-    border: 3px solid #000;
-    color: #000;
-    text-align: center;
-    font: 32px Arial, sans-serif;
-  }
+body {
+
+	background-color: var(--main-background-color);
+	font-family: 'Roboto', sans-serif;
+	color: var(--text-color);	
+
+}
 
   
 *{
@@ -70,7 +70,10 @@ img {
 
 
 
+
 /*----------HEADER-----------*/
+
+
 
 #header{
 
@@ -80,9 +83,28 @@ img {
 
 header nav ul li.logo {
 
-	padding: 1rem 3.2rem 1rem 3.2rem;
+	padding: 1.5rem 3.2rem 0.2rem 3.2rem;
+	font-family: 'Shrikhand', sans-serif;
 	
 }
+
+#header{
+
+	border-bottom: 1px solid var(--border-color);
+}
+
+#secondHeader{
+
+	border-bottom: 1px solid var(--border-color);
+	
+}
+
+.search-form{
+
+	width: 100%;
+}
+
+
 
 /*----------mainContent-----------*/
 
@@ -150,3 +172,22 @@ header nav ul li.logo {
     background-position: center;
 	
 }
+
+
+
+
+/*----------secondNav-----------*/
+
+
+
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #000;
+    color: #000;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+  }
