@@ -14,6 +14,8 @@ Couleur Tertaire   #99E2D0
 --tertiary-color: #99E2D0;
 --border-color:#f2f2f2;
 --text-color:#606060;
+--second-background-color: #E8E8E8;
+--third-background-color: #f2f2f2;
 
 }
 
@@ -93,9 +95,17 @@ header nav ul li.logo {
 	border-bottom: 1px solid var(--border-color);
 }
 
+
+
+/*----------2ndHEADER-----------*/
+
+
+
+
 #secondHeader{
 
 	border-bottom: 1px solid var(--border-color);
+	background-color: var(--second-background-color);
 	
 }
 
@@ -105,6 +115,14 @@ header nav ul li.logo {
 }
 
 
+/*----------mainNav-----------*/
+
+
+#mainNav{
+
+	background-color: var(--third-background-color);
+
+}
 
 /*----------mainContent-----------*/
 
