@@ -7,6 +7,7 @@ Couleur Tertaire   #99E2D0
 
 /*Mes variables pour les couleurs*/
 :root{
+--main-background-color: #FFFFFF;
 --primary-color: #9356DC;
 --secondary-color: #FF79DA;
 --tertiary-color: #99E2D0;
@@ -61,7 +62,7 @@ img {
 
 .wrapper{
 
-	max-width: 780px;px; /*Un point d'arrêt fluide */
+	max-width: 780px; /*Un point d'arrêt fluide */
 	margin: 0px 50px; /*Pour centrer les éléments: 
 	je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
 	
@@ -69,7 +70,19 @@ img {
 
 
 
+/*----------HEADER-----------*/
 
+#header{
+
+	background-color: var(--main-background-color);
+	
+}
+
+header nav ul li.logo {
+
+	padding: 1rem 3.2rem 1rem 3.2rem;
+	
+}
 
 /*----------mainContent-----------*/
 
