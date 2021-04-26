@@ -16,7 +16,7 @@ Couleur Tertaire   #99E2D0
 --text-color:#606060;
 --second-background-color: #E8E8E8;
 --third-background-color: #f2f2f2;
-
+--darker-text-color: black;
 }
 
 /*
@@ -80,6 +80,7 @@ img {
 #header{
 
 	background-color: var(--main-background-color);
+	box-shadow: 8px 0px 0px 0 var(--second-background-color);
 	
 }
 
@@ -106,7 +107,11 @@ header nav ul li.logo {
 
 	border-bottom: 1px solid var(--border-color);
 	background-color: var(--second-background-color);
-	
+	display: flex;
+	justify-content: center;
+	padding: 0.9rem;
+	color: var(--darker-text-color);
+
 }
 
 .search-form{
