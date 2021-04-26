@@ -17,6 +17,10 @@ Couleur Tertaire   #99E2D0
 --second-background-color: #E8E8E8;
 --third-background-color: #f2f2f2;
 --darker-text-color: black;
+--footer-background-color: #353535;
+--placeholder-color: #505050;
+--footer-text-color: #FFFFFF;
+
 }
 
 /*
@@ -79,22 +83,22 @@ img {
 
 #header{
 
+	border-bottom: 1px solid var(--border-color);
 	background-color: var(--main-background-color);
-	box-shadow: 8px 0px 0px 0 var(--second-background-color);
-	
+	/*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
+	justify-content: center;
+	-webkit-box-shadow: 0 10px 5px #888888;
+    -moz-box-shadow: 0 10px 5px #888888;
+    box-shadow: 0 10px 5px #888888;
 }
 
 header nav ul li.logo {
 
 	padding: 1.5rem 3.2rem 0.2rem 3.2rem;
 	font-family: 'Shrikhand', sans-serif;
-	
+
 }
 
-#header{
-
-	border-bottom: 1px solid var(--border-color);
-}
 
 
 
@@ -114,10 +118,41 @@ header nav ul li.logo {
 
 }
 
-.search-form{
+input[type="text"] {
+	outline-style: none !important;
+	}
 
-	width: 100%;
-}
+::placeholder {
+
+    color: var(--placeholder-color);
+	background-color: var(--second-background-color);
+	font-weight: 700;
+	font-size:larger;
+    opacity: 1; /* Firefox */
+	font-family: 'Roboto', sans-serif;
+	/*margin-right: 0px;*/
+	outline: none;
+	
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: var(--placeholder-color);
+   background-color: var(--second-background-color);
+   font-weight: 800;
+   font-size:larger;
+   font-family: 'Roboto', sans-serif;
+   /*margin-right: 0px;*/
+  }
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: var(--placeholder-color);
+   background-color: var(--second-background-color);
+   font-weight: 800;
+   font-size:larger;
+   font-family: 'Roboto', sans-serif;
+   /*margin-right: 0px;*/
+  }
+
 
 
 /*----------mainNav-----------*/
@@ -126,8 +161,16 @@ header nav ul li.logo {
 #mainNav{
 
 	background-color: var(--third-background-color);
-
+	
 }
+
+#mainNav div.row{
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
 
 /*----------mainContent-----------*/
 
@@ -214,3 +257,29 @@ header nav ul li.logo {
     text-align: center;
     font: 32px Arial, sans-serif;
   }
+
+
+
+
+/*----------footer-----------*/  
+
+.footer{
+
+	background-color: var(--footer-background-color);
+	display: flex;
+	justify-content: flex-start;
+	color: var(--footer-text-color);
+
+	
+}
+
+.footer ul li h1{
+
+	font-family: 'Shrikhand', sans-serif;
+}
+
+.footer ul li a{
+
+	color: var(--footer-text-color);
+	font-family: 'Roboto', sans-serif;
+}
