@@ -6,22 +6,31 @@ Couleur Tertaire   #99E2D0
 */
 
 /*Mes variables pour les couleurs*/
-:root{
 
-    --main-background-color: #FFFFFF;
-    --primary-color: #9356DC;
-    --secondary-color: #FF79DA;
-    --tertiary-color: #99E2D0;
-    --border-color:#f2f2f2;
-    --text-color:#606060;
-    --second-background-color: #E8E8E8;
-    --third-background-color: #f2f2f2;
-    --darker-text-color: black;
-    --footer-background-color: #353535;
-    --placeholder-color: #505050;
-    --footer-text-color: #FFFFFF;
+
+    $main-background-color: #FFFFFF;
+    $primary-color: #9356DC;
+    $secondary-color: #FF79DA;
+    $tertiary-color: #99E2D0;
+    $border-color:#f2f2f2;
+    $text-color:#606060;
+    $second-background-color: #E8E8E8;
+    $third-background-color: #f2f2f2;
+    $darker-text-color: black;
+    $footer-background-color: #353535;
+    $placeholder-color: #505050;
+    $footer-text-color: #FFFFFF;
+
+    /*MAPS*/
+
+    $font-weights:(
+        "small": 300,
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+        );
     
-    }
+ 
     
     /*
     Mes Polices
@@ -31,9 +40,10 @@ Couleur Tertaire   #99E2D0
     
     body {
     
-        background-color: var(--main-background-color);
+        background-color: $main-background-color;
         font-family: 'Roboto', sans-serif;
-        color: var(--text-color);	
+        color: $text-color;	
+        font-weight: map-get($font-weights, bold);
     
     }
     
@@ -69,7 +79,7 @@ Couleur Tertaire   #99E2D0
     .wrapper{
     
         max-width: 780px; /*Un point d'arrêt fluide */
-        margin: 0px 50px; /*Pour centrer les éléments: 
+        margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
         
     }
@@ -83,8 +93,8 @@ Couleur Tertaire   #99E2D0
     
     #header{
     
-        border-bottom: 1px solid var(--border-color);
-        background-color: var(--main-background-color);
+        border-bottom: 1px solid $border-color;
+        background-color: $main-background-color;
         /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
         justify-content: center;
         -webkit-box-shadow: 0 10px 5px #888888;
@@ -109,12 +119,12 @@ Couleur Tertaire   #99E2D0
     
     #secondHeader{
     
-        border-bottom: 1px solid var(--border-color);
-        background-color: var(--second-background-color);
+        border-bottom: 1px solid $border-color;
+        background-color: $second-background-color;
         display: flex;
         justify-content: center;
         padding: 0.9rem;
-        color: var(--darker-text-color);
+        color: $darker-text-color;
     
     }
     
@@ -124,8 +134,8 @@ Couleur Tertaire   #99E2D0
     
     ::placeholder {
     
-        color: var(--placeholder-color);
-        background-color: var(--second-background-color);
+        color: $placeholder-color;
+        background-color: $second-background-color;
         font-weight: 700;
         font-size:larger;
         opacity: 1; /* Firefox */
@@ -136,8 +146,8 @@ Couleur Tertaire   #99E2D0
       }
       
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-       color: var(--placeholder-color);
-       background-color: var(--second-background-color);
+       color: $placeholder-color;
+       background-color: $second-background-color;
        font-weight: 800;
        font-size:larger;
        font-family: 'Roboto', sans-serif;
@@ -145,12 +155,24 @@ Couleur Tertaire   #99E2D0
       }
       
     ::-ms-input-placeholder { /* Microsoft Edge */
-       color: var(--placeholder-color);
-       background-color: var(--second-background-color);
+       color: $placeholder-color;
+       background-color: $second-background-color;
        font-weight: 800;
        font-size:larger;
        font-family: 'Roboto', sans-serif;
        /*margin-right: 0px;*/
+      }
+
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        background-color: #eee;
+      }
+      
+      .no-outline:focus {
+        outline: none;
       }
     
     
@@ -160,7 +182,7 @@ Couleur Tertaire   #99E2D0
     
     #mainNav{
     
-        background-color: var(--third-background-color);
+        background-color: $third-background-color;
         
     }
     
@@ -180,12 +202,12 @@ Couleur Tertaire   #99E2D0
         overflow: hidden;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 2rem;
-        border: 6px solid var(--body-background-color);
+        border: 6px solid $main-background-color;
         cursor: pointer;
         /*ease-in - specifies a transition effect with a slow start*/
         transition: transform 200ms ease-in;
         /*Transition effects are animation options*/
-        background: var(--body-background-color);
+        background: $main-background-color;
         min-height: 215px;
     }
     
@@ -252,8 +274,8 @@ Couleur Tertaire   #99E2D0
         height: 34px;
         padding: 10px;
         background: #fff;
-        border: 3px solid #000;
-        color: #000;
+        border: 3px solid $darker-text-color;
+        color: $darker-text-color;
         text-align: center;
         font: 32px Arial, sans-serif;
       }
@@ -265,21 +287,54 @@ Couleur Tertaire   #99E2D0
     
     .footer{
     
-        background-color: var(--footer-background-color);
+        background-color: $footer-background-color;
         display: flex;
         justify-content: flex-start;
-        color: var(--footer-text-color);
-    
+        color: $footer-text-color;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
         
     }
     
-    .footer ul li h1{
+    .footer ul li h2{
     
         font-family: 'Shrikhand', sans-serif;
     }
     
     .footer ul li a{
     
-        color: var(--footer-text-color);
+        color: $footer-text-color;
         font-family: 'Roboto', sans-serif;
+    }
+
+    .footer ul li:first-child{
+
+        padding-bottom: 0.6rem;
+        font-size: small;
+        font-weight: map-get($font-weights, small);
+    }
+
+    .footer ul li.button{
+
+        padding-top: 0.5rem;
+        padding-bottom: 0.1rem;
+        font-size: medium;
+        font-weight: map-get($font-weights, regular);
+    }
+  
+    
+    
+    
+    
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
+
+        padding-right: 1rem;
+        font-size: small;
+    }
+
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
+
+        padding-right: 1rem;
+        font-size: small;
+
     }
