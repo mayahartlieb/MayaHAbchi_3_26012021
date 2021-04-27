@@ -60,7 +60,7 @@ img {
 }
 
 header nav ul li.logo {
-  padding: 1.5rem 3.2rem 0.2rem 3.2rem;
+  padding: 1.5rem 4.2rem 0.2rem 4.2rem;
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -120,6 +120,10 @@ input {
 
 .no-outline:focus {
   outline: none;
+}
+
+#secondHeader div.wrapper div.container.flex nav ul.button-group2 form.search-form i.fas.fa-map-marker-alt {
+  padding-right: 1rem;
 }
 
 /*----------mainNav-----------*/
