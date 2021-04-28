@@ -20,6 +20,7 @@ Couleur Tertaire   #99E2D0
     $footer-background-color: #353535;
     $placeholder-color: #505050;
     $footer-text-color: #FFFFFF;
+    $mainNav-button-color: #FFFFFF;
 
     /*MAPS*/
 
@@ -194,8 +195,37 @@ Couleur Tertaire   #99E2D0
     
         display: flex;
         flex-flow: column;
-        align-items: center;
+        text-align: center;
+        padding-bottom: 3rem;
     }
+
+    #mainNav div.row h2{
+
+        color: $darker-text-color;
+        padding: 2.3rem 3rem 0.9rem 3rem;
+        font-family: 'Roboto', sans-serif;
+       
+    }
+
+    #mainNav div.row p{
+
+        font-size: large;
+        font-weight: map-get($font-weights, regular);
+        color: $placeholder-color;
+        padding-bottom: 2rem;
+    }
+
+    #mainNav div.row button{
+
+        border-radius: 30px;
+        padding: 1rem 1rem 1rem 1rem;
+        color: $mainNav-button-color;
+        background-color: $secondary-color;
+        font-size: medium;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
     
     
     /*----------mainContent-----------*/

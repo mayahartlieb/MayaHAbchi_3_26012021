@@ -134,7 +134,31 @@ input {
 #mainNav div.row {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#mainNav div.row h2 {
+  color: black;
+  padding: 2.3rem 3rem 0.9rem 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#mainNav div.row p {
+  font-size: large;
+  font-weight: 400;
+  color: #505050;
+  padding-bottom: 2rem;
+}
+
+#mainNav div.row button {
+  border-radius: 30px;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #FFFFFF;
+  background-color: #FF79DA;
+  font-size: medium;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 /*----------mainContent-----------*/
