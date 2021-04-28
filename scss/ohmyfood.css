@@ -179,13 +179,14 @@ input {
   font-size: medium;
   font-weight: 500;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .circle {
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  padding: 10px;
+  padding: 8px;
   background: #9356DC;
   border: 3px solid #9356DC;
   color: #FFFFFF;
@@ -196,12 +197,29 @@ input {
   margin-left: -1.5rem;
 }
 
+#secondNav section.wrapper div.row button i.fas.fa-mobile-alt,
+#secondNav section.wrapper div.row button i.fas.fa-list,
+#secondNav section.wrapper div.row button i.fas.fa-store {
+  color: #808080;
+  margin-right: 1.5rem;
+}
+
 /*----------mainContent-----------*/
+#mainContent {
+  background-color: #f2f2f2;
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+}
+
+#Restaurants header h1 {
+  color: black;
+  padding-bottom: 1.2rem;
+}
+
 .card {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2rem;
-  border: 6px solid #FFFFFF;
   cursor: pointer;
   /*ease-in - specifies a transition effect with a slow start*/
   transition: transform 200ms ease-in;

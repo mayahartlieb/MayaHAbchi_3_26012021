@@ -21,6 +21,8 @@ Couleur Tertaire   #99E2D0
     $placeholder-color: #505050;
     $footer-text-color: #FFFFFF;
     $mainNav-button-color: #FFFFFF;
+    $secondNav-icon-color: #808080;
+    $mainContent-background-color: #f2f2f2;
 
     /*MAPS*/
 
@@ -272,13 +274,14 @@ Couleur Tertaire   #99E2D0
         font-size: medium;
         font-weight: map-get($font-weights, medium);
         position: relative;
+        margin-bottom: 1.5rem;
     }
      
     .circle {
         border-radius: 50%;
         width: 34px;
         height: 34px;
-        padding: 10px;
+        padding: 8px;
         background: $primary-color;
         border: 3px solid $primary-color;
         color: $mainNav-button-color;
@@ -290,11 +293,31 @@ Couleur Tertaire   #99E2D0
 
       }
 
+      #secondNav section.wrapper div.row button i.fas.fa-mobile-alt, 
+      #secondNav section.wrapper div.row button i.fas.fa-list, 
+      #secondNav section.wrapper div.row button i.fas.fa-store{
+
+        color: $secondNav-icon-color;
+        margin-right: 1.5rem;
+      }
 
 
 
     
     /*----------mainContent-----------*/
+
+    #mainContent{
+
+        background-color: $mainContent-background-color;
+        padding-top: 3.9rem;
+        padding-bottom: 3.9rem;
+    }
+
+    #Restaurants header h1{
+
+        color: $darker-text-color;
+        padding-bottom: 1.2rem;
+    }
     
     
     .card{
@@ -302,7 +325,6 @@ Couleur Tertaire   #99E2D0
         overflow: hidden;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         border-radius: 2rem;
-        border: 6px solid $main-background-color;
         cursor: pointer;
         /*ease-in - specifies a transition effect with a slow start*/
         transition: transform 200ms ease-in;
