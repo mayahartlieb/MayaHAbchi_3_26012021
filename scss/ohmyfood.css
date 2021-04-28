@@ -178,6 +178,7 @@ input {
   color: black;
   font-size: medium;
   font-weight: 500;
+  position: relative;
 }
 
 .circle {
@@ -185,11 +186,14 @@ input {
   width: 34px;
   height: 34px;
   padding: 10px;
-  background: #fff;
-  border: 3px solid black;
-  color: black;
+  background: #9356DC;
+  border: 3px solid #9356DC;
+  color: #FFFFFF;
   text-align: center;
-  font: 32px Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin-right: 1rem;
+  margin-left: -1.5rem;
 }
 
 /*----------mainContent-----------*/
