@@ -74,10 +74,6 @@ header nav ul li.logo {
   color: black;
 }
 
-input[type=text] {
-  outline-style: none !important;
-}
-
 ::placeholder {
   color: #505050;
   background-color: #E8E8E8;
@@ -161,6 +157,41 @@ input {
   margin-left: 3rem;
 }
 
+/*-----------secondNav--------------*/
+#secondNav div.row {
+  padding: 3rem 0 3rem 0;
+  display: flex;
+  flex-flow: column;
+}
+
+#secondNav div.row header h1 {
+  color: black;
+  padding-bottom: 1.5rem;
+}
+
+#secondNav section.wrapper div.row button {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  color: black;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  background: #fff;
+  border: 3px solid black;
+  color: black;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
+
 /*----------mainContent-----------*/
 .card {
   overflow: hidden;
@@ -213,19 +244,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-/*----------secondNav-----------*/
-.circle {
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  padding: 10px;
-  background: #fff;
-  border: 3px solid black;
-  color: black;
-  text-align: center;
-  font: 32px Arial, sans-serif;
 }
 
 /*----------footer-----------*/

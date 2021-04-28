@@ -129,9 +129,6 @@ Couleur Tertaire   #99E2D0
     
     }
     
-    input[type="text"] {
-        outline-style: none !important;
-        }
     
     ::placeholder {
     
@@ -145,40 +142,55 @@ Couleur Tertaire   #99E2D0
         outline: none;
         
       }
+
       
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
+
        color: $placeholder-color;
        background-color: $second-background-color;
        font-weight: 800;
        font-size:larger;
        font-family: 'Roboto', sans-serif;
        /*margin-right: 0px;*/
-      }
-      
-    ::-ms-input-placeholder { /* Microsoft Edge */
-       color: $placeholder-color;
-       background-color: $second-background-color;
-       font-weight: 800;
-       font-size:larger;
-       font-family: 'Roboto', sans-serif;
-       /*margin-right: 0px;*/
+
       }
 
+      
+    ::-ms-input-placeholder { /* Microsoft Edge */
+
+       color: $placeholder-color;
+       background-color: $second-background-color;
+       font-weight: 800;
+       font-size:larger;
+       font-family: 'Roboto', sans-serif;
+       /*margin-right: 0px;*/
+
+      }
+
+
       input {
+
         border-top-style: hidden;
         border-right-style: hidden;
         border-left-style: hidden;
         border-bottom-style: hidden;
         background-color: #eee;
+
       }
       
+
       .no-outline:focus {
+
         outline: none;
+
       }
+
+
     
       #secondHeader div.wrapper div.container.flex nav ul.button-group2 form.search-form i.fas.fa-map-marker-alt{
 
         padding-right: 1rem;
+
       }
     
     
@@ -190,6 +202,7 @@ Couleur Tertaire   #99E2D0
         background-color: $third-background-color;
         
     }
+
     
     #mainNav div.row{
     
@@ -199,6 +212,7 @@ Couleur Tertaire   #99E2D0
         padding-bottom: 3rem;
     }
 
+
     #mainNav div.row h2{
 
         color: $darker-text-color;
@@ -207,6 +221,7 @@ Couleur Tertaire   #99E2D0
        
     }
 
+
     #mainNav div.row p{
 
         font-size: large;
@@ -214,6 +229,7 @@ Couleur Tertaire   #99E2D0
         color: $placeholder-color;
         padding-bottom: 2rem;
     }
+
 
     #mainNav div.row button{
 
@@ -227,6 +243,51 @@ Couleur Tertaire   #99E2D0
     }
 
     
+
+
+    /*-----------secondNav--------------*/
+
+    #secondNav div.row{
+
+        padding: 3rem 0 3rem 0;
+        display: flex;
+        flex-flow: column;
+        
+    }
+
+    #secondNav div.row header h1{
+
+        color: $darker-text-color;
+        padding-bottom: 1.5rem;
+    }
+
+    #secondNav section.wrapper div.row button{
+
+        background-color: $third-background-color;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+        color: $darker-text-color;
+        font-size: medium;
+        font-weight: map-get($font-weights, medium);
+    }
+     
+    .circle {
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        padding: 10px;
+        background: #fff;
+        border: 3px solid $darker-text-color;
+        color: $darker-text-color;
+        text-align: center;
+        font: 32px Arial, sans-serif;
+      }
+
+
+
+
     
     /*----------mainContent-----------*/
     
@@ -297,22 +358,6 @@ Couleur Tertaire   #99E2D0
     
     
     
-    
-    /*----------secondNav-----------*/
-    
-    
-    
-    .circle {
-        border-radius: 50%;
-        width: 34px;
-        height: 34px;
-        padding: 10px;
-        background: #fff;
-        border: 3px solid $darker-text-color;
-        color: $darker-text-color;
-        text-align: center;
-        font: 32px Arial, sans-serif;
-      }
     
     
     
