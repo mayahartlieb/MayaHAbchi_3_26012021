@@ -225,13 +225,14 @@ input {
   transition: transform 200ms ease-in;
   /*Transition effects are animation options*/
   background: #FFFFFF;
-  min-height: 215px;
+  min-height: 230px;
+  margin-bottom: 1.2rem;
 }
 
 .wrapper-grid div.card__body.laPaletteDuGout {
   background-image: url(../images/restaurants/laPaletteDuGout.jpg);
   object-fit: cover;
-  height: 100%;
+  height: 180px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +242,7 @@ input {
 .wrapper-grid div.card__body.laNoteEnchantee {
   background-image: url(../images/restaurants/laNoteEnchantee.jpg);
   object-fit: cover;
-  height: 100%;
+  height: 180px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +252,7 @@ input {
 .wrapper-grid div.card__body.ALaFrancaise {
   background-image: url(../images/restaurants/ALaFrancaise.jpg);
   object-fit: cover;
-  height: 100%;
+  height: 180px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,7 +262,7 @@ input {
 .wrapper-grid div.card__body.LeDeliceDesSens {
   background-image: url(../images/restaurants/leDeliceDesSens.jpg);
   object-fit: cover;
-  height: 100%;
+  height: 180px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
