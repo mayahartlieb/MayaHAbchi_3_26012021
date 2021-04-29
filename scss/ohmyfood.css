@@ -219,30 +219,71 @@ input {
 .card {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
   /*ease-in - specifies a transition effect with a slow start*/
   transition: transform 200ms ease-in;
   /*Transition effects are animation options*/
   background: #FFFFFF;
-  min-height: 230px;
+  min-height: 235px;
   margin-bottom: 1.2rem;
 }
 
 .wrapper-grid div.card__body.laPaletteDuGout {
   background-image: url(../images/restaurants/laPaletteDuGout.jpg);
   object-fit: cover;
-  height: 180px;
+  height: 165px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+}
+
+#Restaurants div.wrapper-grid div.card div.card_body_part1 {
+  position: relative;
+  top: 150px;
+  padding-left: 0.9rem;
+}
+
+#Restaurants div.wrapper-grid div.card div.card__body button.nouveau {
+  color: #088F8F;
+  background-color: #99E2D0;
+  position: relative;
+  left: 225px;
+  top: 13px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+#Restaurants div.wrapper-grid div.card div.card__body div.card_body_part1 h3.card__title {
+  color: black;
+  font-weight: 700;
+  padding-bottom: 0.2rem;
+  font-size: large;
+}
+
+#Restaurants div.wrapper-grid div.card div.card__body div i.far.fa-heart {
+  position: relative;
+  top: 115px;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row;
+  right: 20px;
+  font-weight: 300;
+  font-size: x-large;
+  color: #817c7a;
+}
+
+#Restaurants div.wrapper-grid div.card div.card__body div.card_body_part1 div.card__description p {
+  font-weight: 400;
 }
 
 .wrapper-grid div.card__body.laNoteEnchantee {
   background-image: url(../images/restaurants/laNoteEnchantee.jpg);
   object-fit: cover;
-  height: 180px;
+  height: 165px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,17 +293,27 @@ input {
 .wrapper-grid div.card__body.ALaFrancaise {
   background-image: url(../images/restaurants/ALaFrancaise.jpg);
   object-fit: cover;
-  height: 180px;
+  height: 165px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+#Restaurants div.wrapper-grid div.card div.card__body.LeDeliceDesSens div.card_body_part1,
+#Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div.card_body_part1 {
+  top: 175px;
+}
+
+#Restaurants div.wrapper-grid div.card div.card__body.LeDeliceDesSens div i.far.fa-heart,
+#Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div i.far.fa-heart {
+  top: 140px;
+}
+
 .wrapper-grid div.card__body.LeDeliceDesSens {
   background-image: url(../images/restaurants/leDeliceDesSens.jpg);
   object-fit: cover;
-  height: 180px;
+  height: 165px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,4 +360,31 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-ute
 footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
   padding-right: 1rem;
   font-size: small;
+}
+
+@media only screen and (min-width: 1200px) {
+  #mainNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+
+  #secondNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mainContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=ohmyfood.css.map */
