@@ -84,7 +84,8 @@ Couleur Tertaire   #99E2D0
     
     
     .wrapper{
-    
+        
+        min-width: 320px;
         max-width: 768px; /*Un point d'arrêt fluide */
         margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
@@ -133,6 +134,12 @@ Couleur Tertaire   #99E2D0
         padding: 0.9rem;
         color: $darker-text-color;
     
+    }
+
+    .container.flex{
+
+        display: flex;
+        justify-content: center;
     }
     
     
@@ -513,10 +520,11 @@ Couleur Tertaire   #99E2D0
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
     
-    @media all and (max-width: 1024px){
+    @media all and (min-width: 769px) and (max-width: 1024px){
 
         .wrapper{
 
+            min-width: 769px;
             max-width: 1024px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
@@ -585,10 +593,11 @@ Couleur Tertaire   #99E2D0
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
        
      
-    @media all and (max-width: 1499px){
+    @media all and (min-width: 1025px) and (max-width: 1499px){
 
         .wrapper{
 
+            min-width: 1025px;
             max-width: 1499px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
