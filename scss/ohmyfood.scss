@@ -26,6 +26,8 @@ Couleur Tertaire   #99E2D0
     $green-button-color: #088F8F;
     $heart-icon-border-color: #817c7a;
 
+
+
     /*MAPS*/
 
     $font-weights:(
@@ -83,7 +85,7 @@ Couleur Tertaire   #99E2D0
     
     .wrapper{
     
-        max-width: 780px; /*Un point d'arrêt fluide */
+        max-width: 768px; /*Un point d'arrêt fluide */
         margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
         
@@ -492,9 +494,7 @@ Couleur Tertaire   #99E2D0
         font-size: medium;
         font-weight: map-get($font-weights, regular);
     }
-  
-    
-    
+   
     
     
     footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
@@ -510,19 +510,38 @@ Couleur Tertaire   #99E2D0
 
     }
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+    
+    @media all and (max-width: 1024px){
 
-    @media only screen and (min-width: 1200px){
+        .wrapper{
+
+            max-width: 1024px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                          
+
+        }
+
+         /*-----------header-------------*/
+
+       #header{
+
+        display: flex;
+        justify-content: center;
+   }
+
+        /*-----------mainNav-------------*/
 
        #mainNav{
+
            display: flex;
            justify-content: center;
        }
 
-       #header{
-
-            display: flex;
-            justify-content: center;
-       }
+       
+        /*-----------secondNav-------------*/
 
        #secondNav{
 
@@ -530,15 +549,97 @@ Couleur Tertaire   #99E2D0
         justify-content: center;            
        }
 
+       #secondNav section.wrapper div.row header{
+        
+        display: flex;
+        justify-content: center; 
+       }
+        /*-----------mainContent-------------*/
+
        #mainContent{
 
         display: flex;
         justify-content: center;
        }
+       
+       /*
+       .card{
+           
+           width: 200%;
+       }
+       */
+
+        /*-----------footer-------------*/
 
        .footer{
 
         display: flex;
         justify-content: center;    
        }
+
+    }
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+       
+     
+    @media all and (max-width: 1499px){
+
+        .wrapper{
+
+            max-width: 1499px; /*Un point d'arrêt fluide */
+            margin: 0px 22px; /*Pour centrer les éléments: 
+            je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+                          
+
+        }
+
+         /*-----------header-------------*/
+
+       #header{
+
+        display: flex;
+        justify-content: center;
+   }
+
+        /*-----------mainNav-------------*/
+
+       #mainNav{
+           display: flex;
+           justify-content: center;
+       }
+
+       
+        /*-----------secondNav-------------*/
+
+       #secondNav{
+
+        display: flex;
+        justify-content: center;            
+       }
+        /*-----------mainContent-------------*/
+
+       #mainContent{
+
+        display: flex;
+        justify-content: center;
+       }
+
+       /*
+       .card{
+           
+           width: 200%;
+       }
+       */
+
+        /*-----------footer-------------*/
+
+       .footer{
+
+        display: flex;
+        justify-content: center;    
+       }
+
     }

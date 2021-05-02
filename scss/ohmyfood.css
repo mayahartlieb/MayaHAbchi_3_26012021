@@ -41,7 +41,7 @@ img {
 }
 
 .wrapper {
-  max-width: 780px;
+  max-width: 768px;
   /*Un point d'arrêt fluide */
   margin: 0px 22px;
   /*Pour centrer les éléments: 
@@ -362,27 +362,100 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   font-size: small;
 }
 
-@media only screen and (min-width: 1200px) {
-  #mainNav {
-    display: flex;
-    justify-content: center;
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+    /*Un point d'arrêt fluide */
+    margin: 0px 22px;
+    /*Pour centrer les éléments: 
+    je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
   }
 
+  /*-----------header-------------*/
   #header {
     display: flex;
     justify-content: center;
   }
 
+  /*-----------mainNav-------------*/
+  #mainNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-----------secondNav-------------*/
   #secondNav {
     display: flex;
     justify-content: center;
   }
 
+  #secondNav section.wrapper div.row header {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-----------mainContent-------------*/
   #mainContent {
     display: flex;
     justify-content: center;
   }
 
+  /*
+  .card{
+
+      width: 200%;
+  }
+  */
+  /*-----------footer-------------*/
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media all and (max-width: 1499px) {
+  .wrapper {
+    max-width: 1499px;
+    /*Un point d'arrêt fluide */
+    margin: 0px 22px;
+    /*Pour centrer les éléments: 
+    je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
+  }
+
+  /*-----------header-------------*/
+  #header {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-----------mainNav-------------*/
+  #mainNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-----------secondNav-------------*/
+  #secondNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-----------mainContent-------------*/
+  #mainContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*
+  .card{
+
+      width: 200%;
+  }
+  */
+  /*-----------footer-------------*/
   .footer {
     display: flex;
     justify-content: center;
