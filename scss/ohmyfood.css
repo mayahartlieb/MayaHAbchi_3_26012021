@@ -30,9 +30,10 @@ ul {
   list-style-type: none;
 }
 
-a {
+a, span {
   /*I want to remove my underlines*/
   text-decoration: none;
+  color: #606060;
 }
 
 img {
@@ -247,11 +248,11 @@ input {
 
 #Restaurants div.wrapper-grid div.card div.card_body_part1 {
   position: relative;
-  top: 150px;
+  top: 155px;
   padding-left: 0.9rem;
 }
 
-#Restaurants div.wrapper-grid div.card div.card__body button.nouveau {
+#Restaurants div.wrapper-grid div.card div.card__body span.nouveau {
   color: #088F8F;
   background-color: #99E2D0;
   position: relative;
