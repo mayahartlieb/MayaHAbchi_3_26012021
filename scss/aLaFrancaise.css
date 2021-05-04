@@ -110,12 +110,17 @@ header nav ul li.logo {
   padding-top: 1rem;
 }
 
-#Menu div.wrapper-grid section.entrees header {
+#Menu div.wrapper-grid section.entrees header,
+#Menu div.wrapper-grid section.plats header,
+#Menu div.wrapper-grid section.desserts header {
   font-weight: 400;
   font-size: medium;
+  margin-bottom: 0.9rem;
 }
 
-#Menu div.wrapper-grid section.entrees header:after {
+#Menu div.wrapper-grid section.entrees header:after,
+#Menu div.wrapper-grid section.plats header:after,
+#Menu div.wrapper-grid section.desserts header:after {
   content: "";
   /* This is necessary for the pseudo element to work. */
   display: block;
@@ -130,6 +135,46 @@ header nav ul li.logo {
   /* This creates some space between the element and the border. */
   border-bottom: 3px solid #99E2D0;
   /* This creates the border. Replace black with whatever color you want.*/
+}
+
+#Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
+#Menu div.wrapper-grid section.desserts div.card {
+  background-color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  border-radius: 19px;
+  padding: 0.9rem;
+}
+
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Menu div.wrapper-grid button {
+  border-radius: 30px;
+  padding: 0.7rem 2.9rem 0.7rem 2.9rem;
+  color: #FFFFFF;
+  background-color: #FF79DA;
+  font-size: medium;
+  margin: 3rem 3rem 5.5rem 3.5rem;
+}
+
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title {
+  color: black;
+  font-weight: 700;
+  font-size: medium;
+}
+
+#Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
+#Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
+#Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 0.3rem;
 }
 
 /*----------footer-----------*/
