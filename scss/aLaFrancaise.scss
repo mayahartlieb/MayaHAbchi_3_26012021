@@ -118,12 +118,14 @@ img {
     /*----------secondheader-----------*/
 
 
-    #secondHeader div.containerImage{
+    #secondHeader div.container img{
 
         background-image: url(../images/restaurants/ALaFrancaise.jpg);
         width: 100%;
         background-repeat: no-repeat;
         object-fit: cover;
+        z-index: -1;
+        position: relative;
     }
 
 
@@ -131,12 +133,55 @@ img {
 
     /*----------mainContent-----------*/
 
+    #mainContent{
+
+        background-color: $third-background-color;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        margin-top: -43px;
+        z-index: 10px;
+    }
+
     #Menu header{
 
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    #Menu > header:nth-child(1) > h1:nth-child(1){
+
+        color: $darker-text-color;
+        font-family: 'Shrikhand', sans-serif;
+     
+        font-weight: map-get($font-weights, bold);
+    }
+
+    #Menu header{
+
+        padding-top: 1.8rem;
+        font-size: large;
+        font-weight: map-get($font-weights, medium);
+    }
+
+    #Menu header i.far.fa-heart{
+
+        font-size: x-large;
+        padding-right: 0.9rem;
+        color: $secondNav-icon-color;
+    }
+
+
+    #Menu div.wrapper-grid section.entrees header{
+
+        padding-top: 1.8rem;
+    }
+
+   #Menu div.wrapper-grid section.entrees header{
+
+        font-weight: map-get($font-weights, regular);
+        font-size: medium;
+   }
 
     /*----------footer-----------*/  
     
