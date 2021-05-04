@@ -107,12 +107,29 @@ header nav ul li.logo {
 }
 
 #Menu div.wrapper-grid section.entrees header {
-  padding-top: 1.8rem;
+  padding-top: 1rem;
 }
 
 #Menu div.wrapper-grid section.entrees header {
   font-weight: 400;
   font-size: medium;
+}
+
+#Menu div.wrapper-grid section.entrees header:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin-right: 17.5rem;
+  margin-left: -8rem;
+  /* This will center the border. */
+  margin-top: 0.5rem;
+  width: 13%;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #99E2D0;
+  /* This creates the border. Replace black with whatever color you want.*/
 }
 
 /*----------footer-----------*/
