@@ -409,12 +409,12 @@ img {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
        
      
-@media all and (min-width: 1025px) and (max-width: 1499px){
+@media all and (min-width: 1025px) and (max-width: 1600px){
 
     .wrapper{
 
         min-width: 1025px;
-        max-width: 1499px; /*Un point d'arrêt fluide */
+        max-width: 1600px; /*Un point d'arrêt fluide */
         margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
                       
@@ -429,6 +429,14 @@ img {
     justify-content: center;
     }
 
+
+    /*-----------secondHeader-------------*/
+
+
+    #secondHeader div.container img{
+
+        height: 600px ;
+    }
 
     /*-----------footer-------------*/
 

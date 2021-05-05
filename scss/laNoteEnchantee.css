@@ -283,10 +283,10 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (min-width: 1025px) and (max-width: 1499px) {
+@media all and (min-width: 1025px) and (max-width: 1600px) {
   .wrapper {
     min-width: 1025px;
-    max-width: 1499px;
+    max-width: 1600px;
     /*Un point d'arrêt fluide */
     margin: 0px 22px;
     /*Pour centrer les éléments: 
@@ -297,6 +297,11 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   #header {
     display: flex;
     justify-content: center;
+  }
+
+  /*-----------secondHeader-------------*/
+  #secondHeader div.container img {
+    height: 600px;
   }
 
   /*-----------footer-------------*/
