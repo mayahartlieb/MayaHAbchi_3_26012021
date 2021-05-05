@@ -153,8 +153,7 @@ img {
     #Menu > header:nth-child(1) > h1:nth-child(1){
 
         color: $darker-text-color;
-        font-family: 'Shrikhand', sans-serif;
-     
+        font-family: 'Shrikhand', sans-serif;     
         font-weight: map-get($font-weights, bold);
     }
 
@@ -180,7 +179,7 @@ img {
 
    #Menu div.wrapper-grid section.entrees header,
    #Menu div.wrapper-grid section.plats header,
-  #Menu div.wrapper-grid section.desserts header{
+   #Menu div.wrapper-grid section.desserts header{
 
         font-weight: map-get($font-weights, regular);
         font-size: medium;
@@ -225,7 +224,7 @@ img {
 
 
    
-  #Menu div.wrapper-grid button{
+   #Menu div.wrapper-grid button{
 
         border-radius: 30px;
         padding: 0.7rem 2.9rem 0.7rem 2.9rem;
@@ -250,7 +249,7 @@ img {
 
    #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
    #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
-  #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
+   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
 
         font-weight: map-get($font-weights, regular);
         font-size: 14px;

@@ -25,6 +25,7 @@ $secondNav-icon-color: #808080;
 $mainContent-background-color: #f2f2f2;
 $green-button-color: #088F8F;
 $heart-icon-border-color: #817c7a;
+$card-background-color: #FFFFFF;
 
 
 
@@ -118,12 +119,14 @@ img {
     /*----------secondheader-----------*/
 
 
-    #secondHeader div.containerImage{
+    #secondHeader div.container img {
 
         background-image: url(../images/restaurants/ALaFrancaise.jpg);
         width: 100%;
         background-repeat: no-repeat;
         object-fit: cover;
+        z-index: -1;
+        position: relative;
     }
 
 
@@ -131,12 +134,129 @@ img {
 
     /*----------mainContent-----------*/
 
+
+    #mainContent{
+
+        background-color: $third-background-color;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        margin-top: -43px;
+        z-index: 10px;
+    }
+
     #Menu header{
 
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+
+    #Menu > header:nth-child(1) > h1:nth-child(1){
+
+        color: $darker-text-color;
+        font-family: 'Shrikhand', sans-serif;     
+        font-weight: map-get($font-weights, bold);
+    }
+
+    #Menu header{
+
+        padding-top: 1.8rem;
+        font-size: large;
+        font-weight: map-get($font-weights, medium);
+    }
+
+    #Menu header i.far.fa-heart{
+
+        font-size: x-large;
+        padding-right: 0.9rem;
+        color: $secondNav-icon-color;
+    }
+
+
+    #Menu div.wrapper-grid section.entrees header{
+
+        padding-top: 1rem;
+    }
+
+   #Menu div.wrapper-grid section.entrees header,
+   #Menu div.wrapper-grid section.plats header,
+   #Menu div.wrapper-grid section.desserts header{
+
+        font-weight: map-get($font-weights, regular);
+        font-size: medium;
+        margin-bottom: 0.9rem;
+        
+   }
+
+   #Menu div.wrapper-grid section.entrees header:after,
+   #Menu div.wrapper-grid section.plats header:after,
+   #Menu div.wrapper-grid section.desserts header:after
+   {
+
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin-right: 17.5rem;
+        margin-left: -8rem; /* This will center the border. */
+        margin-top: 0.5rem;
+        width: 13%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 3px solid $tertiary-color; /* This creates the border. Replace black with whatever color you want.*/
+   }
+   
+  
+   #Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
+   #Menu div.wrapper-grid section.desserts div.card{
+
+        background-color: $card-background-color;
+        margin-bottom: 0.5rem;
+        border-radius: 19px;
+        padding: 0.9rem;
+
+   }
+
+
+   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
+   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
+   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description{
+
+        display: flex;
+        justify-content: space-between;
+   }
+
+
+   
+   #Menu div.wrapper-grid button{
+
+        border-radius: 30px;
+        padding: 0.7rem 2.9rem 0.7rem 2.9rem;
+        color: #FFFFFF;
+        background-color: #FF79DA;
+        font-size: medium;
+        margin: 3rem 3rem 5.5rem 3.5rem;
+        
+   }
+
+
+   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
+   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
+   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title
+   {
+
+        color: $darker-text-color;
+        font-weight: map-get($font-weights, bold);
+        font-size: medium;
+    
+   }
+
+   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
+   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
+   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
+
+        font-weight: map-get($font-weights, regular);
+        font-size: 14px;
+        padding-top: 0.3rem;
+   }
 
     /*----------footer-----------*/  
     
