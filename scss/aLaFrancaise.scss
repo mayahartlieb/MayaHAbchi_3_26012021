@@ -415,7 +415,7 @@ img {
 
         min-width: 1025px;
         max-width: 1600px; /*Un point d'arrêt fluide */
-        margin: 0px 22px; /*Pour centrer les éléments: 
+        margin: 0px 100px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
                       
 
@@ -423,11 +423,15 @@ img {
 
      /*-----------header-------------*/
 
-   #header{
 
-    display: flex;
-    justify-content: center;
+    #header{
+
+        display: flex;
+        justify-content: center;
+
     }
+
+    
 
 
     /*-----------secondHeader-------------*/
@@ -435,10 +439,30 @@ img {
 
     #secondHeader div.container img{
 
-        height: 600px ;
+        height: 600px;
     }
 
-    /*-----------footer-------------*/
+
+
+
+    /*--------------mainContent------------*/
+
+    #Menu header{
+
+        margin-right: 3rem;
+        margin-left: 1rem;
+    }
+
+    #Menu div.wrapper-grid button{
+
+    margin: 3rem 1rem 5.5rem 32rem;
+    font-size: x-large;
+
+    }
+
+
+    /*----------------footer---------------*/
+
 
     .footer{
 
@@ -446,6 +470,29 @@ img {
         justify-content: center;    
     }
 
+    footer.wrapper div.container{
+
+        display: flex;
+        justify-content: center;  
+    }
+
+    #mentionsLegales ul li h2{
+
+        font-size: 400%;
+        
+    }
+
+    #mentionsLegales ul li.button{
+
+        font-size: 200%;
+    }
+
+   
+    #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+    #mentionsLegales ul li.button a i.fas.fa-utensils::before{
+
+        font-size: 200%;
+    }
 }
 
         
