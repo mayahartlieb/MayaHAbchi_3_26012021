@@ -221,9 +221,9 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media all and (min-width: 769px) and (max-width: 1024px) {
+@media all and (min-width: 761px) and (max-width: 1024px) {
   .wrapper {
-    min-width: 769px;
+    min-width: 761px;
     max-width: 1024px;
     /*Un point d'arrêt fluide */
     margin: 0px 22px;
@@ -237,10 +237,47 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     justify-content: center;
   }
 
+  /*-----------secondHeader-------------*/
+  #secondHeader div.container img {
+    height: 400px;
+  }
+
+  /*----------mainContent-----------*/
+  #Menu header i.far.fa-heart {
+    margin-right: 2rem;
+  }
+
+  #Menu div.wrapper-grid section.entrees header:after,
+#Menu div.wrapper-grid section.desserts header:after {
+    margin-left: -8rem;
+    margin-right: 42.9rem;
+    width: 10%;
+  }
+
+  #Menu div.wrapper-grid section.plats header:after {
+    margin-right: 45rem;
+    margin-left: -3rem;
+    width: 20%;
+  }
+
+  #Menu div.wrapper-grid section.entrees div.card,
+#Menu div.wrapper-grid section.plats div.card,
+#Menu div.wrapper-grid section.desserts div.card {
+    margin-right: 2rem;
+  }
+
+  #Menu div.wrapper-grid button {
+    margin: 3rem 3rem 5.5rem 15rem;
+  }
+
   /*-----------footer-------------*/
   .footer {
     display: flex;
     justify-content: center;
+  }
+
+  html body div.footer footer.wrapper div.container {
+    margin-left: 2rem;
   }
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
