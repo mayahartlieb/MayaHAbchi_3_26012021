@@ -87,7 +87,7 @@ Couleur Tertaire   #99E2D0
     .wrapper{
         
         min-width: 320px;
-        max-width: 760px; /*Un point d'arrêt fluide */
+        max-width: 400px; /*Un point d'arrêt fluide */
         margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
         
@@ -517,6 +517,8 @@ Couleur Tertaire   #99E2D0
 
     }
 
+
+
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
     
@@ -601,6 +603,10 @@ Couleur Tertaire   #99E2D0
         }
 
        
+        #Restaurants div.wrapper-grid div.card div.card__body span.nouveau{
+
+            left: 330px;
+        }
 
         /*-----------footer-------------*/
 

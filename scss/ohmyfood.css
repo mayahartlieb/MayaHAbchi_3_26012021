@@ -43,7 +43,7 @@ img {
 
 .wrapper {
   min-width: 320px;
-  max-width: 760px;
+  max-width: 400px;
   /*Un point d'arrêt fluide */
   margin: 0px 22px;
   /*Pour centrer les éléments: 
@@ -425,6 +425,10 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
 
   #Restaurants div.wrapper-grid a div.card {
     margin: 1rem 10rem;
+  }
+
+  #Restaurants div.wrapper-grid div.card div.card__body span.nouveau {
+    left: 330px;
   }
 
   /*-----------footer-------------*/
