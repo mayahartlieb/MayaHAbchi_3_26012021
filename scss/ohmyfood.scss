@@ -82,7 +82,7 @@ Couleur Tertaire   #99E2D0
         width: 100%;
     }
     
-    
+   
     
     .wrapper{
         
@@ -524,7 +524,7 @@ Couleur Tertaire   #99E2D0
 
         .wrapper{
 
-            min-width: 769px;
+            min-width: 761px;
             max-width: 1024px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
@@ -534,7 +534,7 @@ Couleur Tertaire   #99E2D0
 
          /*-----------header-------------*/
 
-       #header{
+        #header{
 
         display: flex;
         justify-content: center;
@@ -550,7 +550,15 @@ Couleur Tertaire   #99E2D0
 
         }
 
+        #mainNav section.wrapper div.row.narrow button{
+
+            margin: 0 10rem;
+        }
         
+        #secondNav section.wrapper div.row button{
+
+            margin: 0.5rem 13rem;
+        }
 
        
         /*-----------secondNav-------------*/
@@ -578,7 +586,20 @@ Couleur Tertaire   #99E2D0
         justify-content: center;
 
         }
-       
+
+       #Restaurants header{
+
+        display: flex;
+        justify-content: center;
+
+        }
+          
+        
+        #Restaurants div.wrapper-grid a div.card{
+
+            margin: 1rem 10rem;
+        }
+
        
 
         /*-----------footer-------------*/
@@ -589,6 +610,20 @@ Couleur Tertaire   #99E2D0
         justify-content: center;    
 
        }
+
+        
+       footer.wrapper div.container{
+
+        display: flex;
+        justify-content: center;  
+        
+        }
+
+        .footer ul li h2{
+
+            font-size: 250%;
+        }   
+
 
     }
 
@@ -673,6 +708,7 @@ Couleur Tertaire   #99E2D0
         justify-content: center;  
         
         }
+
 
         #mentionsLegales ul li h2{
 
