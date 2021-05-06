@@ -87,7 +87,7 @@ Couleur Tertaire   #99E2D0
     .wrapper{
         
         min-width: 320px;
-        max-width: 768px; /*Un point d'arrêt fluide */
+        max-width: 760px; /*Un point d'arrêt fluide */
         margin: 0px 22px; /*Pour centrer les éléments: 
         je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
         
@@ -356,8 +356,7 @@ Couleur Tertaire   #99E2D0
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
-        
-        
+               
     
     }
     
@@ -521,7 +520,7 @@ Couleur Tertaire   #99E2D0
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
     
-    @media all and (min-width: 769px) and (max-width: 1024px){
+    @media all and (min-width: 761px) and (max-width: 1024px){
 
         .wrapper{
 
@@ -539,37 +538,46 @@ Couleur Tertaire   #99E2D0
 
         display: flex;
         justify-content: center;
-   }
+
+        }
 
         /*-----------mainNav-------------*/
 
-       #mainNav{
+        #mainNav{
 
            display: flex;
            justify-content: center;
-       }
+
+        }
+
+        
 
        
         /*-----------secondNav-------------*/
 
-       #secondNav{
+        #secondNav{
 
         display: flex;
-        justify-content: center;            
-       }
+        justify-content: center;  
 
-       #secondNav section.wrapper div.row header{
+        }
+
+        #secondNav section.wrapper div.row header{
         
         display: flex;
         justify-content: center; 
-       }
+
+        }
+
+
         /*-----------mainContent-------------*/
 
-       #mainContent{
+        #mainContent{
 
         display: flex;
         justify-content: center;
-       }
+
+        }
        
        
 
@@ -579,6 +587,7 @@ Couleur Tertaire   #99E2D0
 
         display: flex;
         justify-content: center;    
+
        }
 
     }
@@ -589,12 +598,12 @@ Couleur Tertaire   #99E2D0
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
        
      
-    @media all and (min-width: 1025px) and (max-width: 1499px){
+    @media all and (min-width: 1025px) and (max-width: 1600px){
 
         .wrapper{
 
             min-width: 1025px;
-            max-width: 1499px; /*Un point d'arrêt fluide */
+            max-width: 1600px; /*Un point d'arrêt fluide */
             margin: 0px 22px; /*Pour centrer les éléments: 
             je vais définir une marge égale à 0 en haut et en bas et 50px à droite et à gauche*/
                           
@@ -603,18 +612,27 @@ Couleur Tertaire   #99E2D0
 
          /*-----------header-------------*/
 
-       #header{
+        #header{
 
         display: flex;
         justify-content: center;
-   }
+       }
 
         /*-----------mainNav-------------*/
 
-       #mainNav{
+        #mainNav{
+
            display: flex;
            justify-content: center;
-       }
+        }
+
+        #mainNav div.row button{
+
+            margin-right: 20rem;
+            margin-left: 20rem;
+        
+        }
+
 
        
         /*-----------secondNav-------------*/
@@ -622,14 +640,19 @@ Couleur Tertaire   #99E2D0
        #secondNav{
 
         display: flex;
-        justify-content: center;            
+        justify-content: center;     
+
        }
+
+
         /*-----------mainContent-------------*/
 
        #mainContent{
 
         display: flex;
         justify-content: center;
+
+
        }
 
       
@@ -640,6 +663,33 @@ Couleur Tertaire   #99E2D0
 
         display: flex;
         justify-content: center;    
+
+
        }
+
+       footer.wrapper div.container{
+
+        display: flex;
+        justify-content: center;  
+        
+        }
+
+        #mentionsLegales ul li h2{
+
+            font-size: 400%;
+            
+        }
+
+        #mentionsLegales ul li.button{
+
+            font-size: 200%;
+        }
+
+    
+        #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+        #mentionsLegales ul li.button a i.fas.fa-utensils::before{
+
+            font-size: 200%;
+        }
 
     }
