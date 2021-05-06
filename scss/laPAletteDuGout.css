@@ -303,9 +303,51 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     height: 600px;
   }
 
+  /*--------------mainContent------------*/
+  #Menu header {
+    margin-right: 3rem;
+    margin-left: 1rem;
+  }
+
+  #Menu div.wrapper-grid button {
+    margin: 3rem 1rem 5.5rem 36rem;
+    font-size: x-large;
+  }
+
+  #Menu div.wrapper-grid section.entrees header::after,
+#Menu div.wrapper-grid section.plats header::after,
+#Menu div.wrapper-grid section.desserts header::after {
+    content: "";
+    display: block;
+    margin-right: 84rem;
+    margin-left: -8rem;
+    margin-top: 0.5rem;
+    width: 5%;
+    padding-top: 20px;
+    border-bottom: 3px solid #99E2D0;
+  }
+
   /*-----------footer-------------*/
   .footer {
     display: flex;
     justify-content: center;
+  }
+
+  footer.wrapper div.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #mentionsLegales ul li h2 {
+    font-size: 400%;
+  }
+
+  #mentionsLegales ul li.button {
+    font-size: 200%;
+  }
+
+  #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
+#mentionsLegales ul li.button a i.fas.fa-utensils::before {
+    font-size: 200%;
   }
 }/*# sourceMappingURL=laPAletteDuGout.css.map */

@@ -314,6 +314,19 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     font-size: x-large;
   }
 
+  #Menu div.wrapper-grid section.entrees header::after,
+#Menu div.wrapper-grid section.plats header::after,
+#Menu div.wrapper-grid section.desserts header::after {
+    content: "";
+    display: block;
+    margin-right: 74.5rem;
+    margin-left: -8rem;
+    margin-top: 0.5rem;
+    width: 5%;
+    padding-top: 20px;
+    border-bottom: 3px solid #99E2D0;
+  }
+
   /*----------------footer---------------*/
   .footer {
     display: flex;
