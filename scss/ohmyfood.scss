@@ -25,6 +25,7 @@ Couleur Tertaire   #99E2D0
     $mainContent-background-color: #f2f2f2;
     $green-button-color: #088F8F;
     $heart-icon-border-color: #817c7a;
+    $box-shadow-color: #888888;
 
 
 
@@ -34,6 +35,7 @@ Couleur Tertaire   #99E2D0
         "small": 300,
         "regular": 400,
         "medium": 500,
+        "large": 600,
         "bold": 700
         );
     
@@ -105,15 +107,14 @@ Couleur Tertaire   #99E2D0
         border-bottom: 1px solid $border-color;
         background-color: $main-background-color;
         /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [color];*/
-        justify-content: center;
-        -webkit-box-shadow: 0 10px 5px #888888;
-        -moz-box-shadow: 0 10px 5px #888888;
-        box-shadow: 0 10px 5px #888888;
-    }
+        box-shadow: 0px 0px 5px 0 $box-shadow-color;    
+        margin-bottom: 2px;  
+        
+     }
     
     header nav ul li.logo {
     
-        padding: 1.5rem 4.2rem 0.2rem 4.2rem;
+        padding: 1.5rem 4.2rem 0.2rem 4.2rem; /*J'ai réduit la taille de mon logo avec des paddings de 4.2rem à droite et à gauche*/
         font-family: 'Shrikhand', sans-serif;
     
     }
@@ -134,6 +135,7 @@ Couleur Tertaire   #99E2D0
         justify-content: center;
         padding: 0.9rem;
         color: $darker-text-color;
+      
     
     }
 
@@ -230,7 +232,7 @@ Couleur Tertaire   #99E2D0
     #mainNav div.row h2{
 
         color: $darker-text-color;
-        padding: 2.3rem 3rem 0.9rem 3rem;
+        padding: 2.3rem 2rem 0.9rem 2rem;
         font-family: 'Roboto', sans-serif;
        
     }
@@ -254,6 +256,9 @@ Couleur Tertaire   #99E2D0
         font-size: medium;
         margin-right: 3rem;
         margin-left: 3rem;
+        border: 2px;
+        background: linear-gradient($secondary-color, $primary-color);
+        box-shadow: 2px 2px 7px 0px $box-shadow-color;
     }
 
     
@@ -275,46 +280,71 @@ Couleur Tertaire   #99E2D0
         padding-bottom: 1.5rem;
     }
 
-    #secondNav section.wrapper div.row button{
+    #secondNav section.wrapper div.row a{
 
         background-color: $third-background-color;
-        border-radius: 30px;
+        border-radius: 22px;
         display: flex;
         align-items: center;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1.5rem;
         color: $darker-text-color;
         font-size: medium;
-        font-weight: map-get($font-weights, medium);
+        font-weight: map-get($font-weights, large);
         position: relative;
         margin-bottom: 1.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        border: 2px;
+        cursor: pointer;
+
+       
+
+        &:active{
+         
+        background-color: #f5edff;    
+
+            }
+
+         
+        
     }
      
+
     .circle {
         border-radius: 50%;
-        width: 34px;
-        height: 34px;
-        padding: 8px;
+        width: 25px;
+        height: 25px;
+        padding: 1px;
         background: $primary-color;
         border: 3px solid $primary-color;
-        color: $mainNav-button-color;
+        color: #FFFFFF;
         text-align: center;
-        font-family:'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         position: relative;
         margin-right: 1rem;
-        margin-left: -1.5rem;
+        margin-left: -2.5rem;
+    
 
       }
 
-      #secondNav section.wrapper div.row button i.fas.fa-mobile-alt, 
-      #secondNav section.wrapper div.row button i.fas.fa-list, 
-      #secondNav section.wrapper div.row button i.fas.fa-store{
+      #secondNav section.wrapper div.row a i.fas.fa-mobile-alt, 
+      #secondNav section.wrapper div.row a i.fas.fa-list, 
+      #secondNav section.wrapper div.row a i.fas.fa-store{
 
         color: $secondNav-icon-color;
         margin-right: 1.5rem;
+        font-size: 120%;
+
+         /*if active :  color or background: linear-gradient(#ff79da, #c466db); */
+        
       }
 
+      #secondNav section.wrapper div.row a:active .fa-mobile-alt, 
+      #secondNav section.wrapper div.row a:active .fa-list, 
+      #secondNav section.wrapper div.row a:active .fa-store{
 
-
+        color: $primary-color ;
+      }
+     
     
     /*----------mainContent-----------*/
 
@@ -364,7 +394,7 @@ Couleur Tertaire   #99E2D0
    #Restaurants div.wrapper-grid div.card div.card_body_part1{
 
         position: relative;
-        top: 155px;
+        top: 160px;
         padding-left: 0.9rem;
    }
 
@@ -393,7 +423,7 @@ Couleur Tertaire   #99E2D0
     #Restaurants div.wrapper-grid div.card div.card__body div i.far.fa-heart{
 
         position: relative;
-        top: 115px;
+        top: 120px;
         display: flex;
         justify-content: flex-end;
         flex-flow: row;
@@ -401,6 +431,14 @@ Couleur Tertaire   #99E2D0
         font-weight:  map-get($font-weights, small);
         font-size: x-large;
         color: $heart-icon-border-color;
+        cursor: pointer;
+
+        &:hover{
+             /*if hover :  color or background: linear-gradient(#ff79da, #c466db); */
+            color: linear-gradient(#ff79da, #c466db) ;
+        }
+
+        
     }
 
     #Restaurants div.wrapper-grid div.card div.card__body div.card_body_part1 div.card__description p{
@@ -533,16 +571,19 @@ Couleur Tertaire   #99E2D0
 
     }
 
+    /*------------secondNav--------------*/
+
+    #secondNav section.wrapper div.row a{
+
+        margin-right: 1rem;
+    }
+
+
     /*------------mainContent------------*/
 
     #Restaurants div.wrapper-grid div.card div.card__body span.nouveau{
 
         left: 280px;
-    }
-
-    #secondNav section.wrapper div.row button{
-
-        margin-right: 1rem;
     }
 
     #Restaurants div.wrapper-grid a div.card{
@@ -589,13 +630,14 @@ Couleur Tertaire   #99E2D0
             margin: 0 10rem;
         }
         
-        #secondNav section.wrapper div.row button{
+        /*-----------secondNav-------------*/
+
+
+        #secondNav section.wrapper div.row a{
 
             margin: 0.5rem 13rem;
         }
 
-       
-        /*-----------secondNav-------------*/
 
         #secondNav{
 
@@ -621,7 +663,7 @@ Couleur Tertaire   #99E2D0
 
         }
 
-       #Restaurants header{
+        #Restaurants header{
 
         display: flex;
         justify-content: center;
@@ -689,7 +731,8 @@ Couleur Tertaire   #99E2D0
 
         display: flex;
         justify-content: center;
-       }
+
+        }
 
         /*-----------mainNav-------------*/
 
