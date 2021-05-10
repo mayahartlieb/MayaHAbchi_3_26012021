@@ -528,8 +528,18 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     justify-content: center;
   }
 
+  #secondNav div.row header h1 {
+    display: flex;
+    justify-content: center;
+  }
+
   /*-----------mainContent-------------*/
   #mainContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  #Restaurants header h1 {
     display: flex;
     justify-content: center;
   }

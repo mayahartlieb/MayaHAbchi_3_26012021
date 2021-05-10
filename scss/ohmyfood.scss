@@ -760,6 +760,12 @@ Couleur Tertaire   #99E2D0
 
        }
 
+       #secondNav div.row header h1 {
+      
+        display: flex;
+        justify-content: center;
+      }
+
 
         /*-----------mainContent-------------*/
 
@@ -771,7 +777,12 @@ Couleur Tertaire   #99E2D0
 
        }
 
-      
+       #Restaurants header h1{
+
+        display: flex;
+        justify-content: center;
+
+       }
 
         /*-----------footer-------------*/
 
