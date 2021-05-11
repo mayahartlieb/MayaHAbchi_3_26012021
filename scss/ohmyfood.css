@@ -265,7 +265,6 @@ input {
   font-size: x-large;
   color: #817c7a;
   cursor: pointer;
-  /*if hover :  color or background: linear-gradient(#ff79da, #c466db); */
 }
 #Restaurants div.wrapper-grid div.card div.card__body div.card_body_part1 div.card__description p {
   font-weight: 400;
@@ -278,14 +277,19 @@ input {
 #Restaurants div.wrapper-grid div.card div.card__body.ALaFrancaise div i.far.fa-heart {
   top: 140px;
 }
+#Restaurants div.wrapper-grid a div.card div.card__body div.heart {
+  cursor: pointer;
+  position: relative;
+}
 
 .fa-heart {
   cursor: pointer;
 }
 
+/*if hover, background-color: #c065db */
 .heart:hover .far.fa-heart::before {
-  color: #ff79da;
-  background-color: linear-gradient(#ff79da, #c466db);
+  color: #c065db;
+  background: #c065db;
 }
 
 .card {
@@ -522,7 +526,7 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     display: flex;
     justify-content: center;
   }
-  #Restaurants div.wrapper-grid a div.card div.card__body.laPaletteDuGout span.nouveau,
+  #Restaurants div.wrapper-grid div.card div.card__body.laPaletteDuGout a span.nouveau,
 #Restaurants div.wrapper-grid a div.card div.card__body.laNoteEnchantee span.nouveau {
     left: 57.5rem;
     top: 15px;

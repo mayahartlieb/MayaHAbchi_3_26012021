@@ -159,6 +159,9 @@ header nav ul li.logo {
   background-color: #FF79DA;
   font-size: medium;
   margin: 3rem 3rem 5.5rem 3.5rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 2px 2px 7px 0px #888888;
+  border: 2px;
 }
 
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
