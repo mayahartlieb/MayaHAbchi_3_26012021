@@ -147,54 +147,63 @@ img {
         z-index: 10px;
     }
 
-    #Menu header{
+    #Menu{
+
+
+    
+        header{
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    #Menu > header:nth-child(1) > h1:nth-child(1){
+        }
+
+        > header:nth-child(1) > h1:nth-child(1){
 
         color: $darker-text-color;
         font-family: 'Shrikhand', sans-serif;     
         font-weight: map-get($font-weights, bold);
-    }
 
-    #Menu header{
+        }
+
+        header{
 
         padding-top: 1.8rem;
         font-size: large;
         font-weight: map-get($font-weights, medium);
-    }
 
-    #Menu header i.far.fa-heart{
+        }
+
+        header i.far.fa-heart{
 
         font-size: x-large;
         padding-right: 0.9rem;
         color: $secondNav-icon-color;
-    }
+
+        }
 
 
-    #Menu div.wrapper-grid section.entrees header{
+        div.wrapper-grid section.entrees header{
 
         padding-top: 1rem;
-    }
 
-    #Menu div.wrapper-grid section.entrees header,
-    #Menu div.wrapper-grid section.plats header,
-    #Menu div.wrapper-grid section.desserts header{
+        }
+
+        div.wrapper-grid section.entrees header,
+        div.wrapper-grid section.plats header,
+        div.wrapper-grid section.desserts header{
 
         font-weight: map-get($font-weights, regular);
         font-size: medium;
         margin-bottom: 0.9rem;
         
-   }
+        }
 
-   #Menu div.wrapper-grid section.entrees header:after,
-   #Menu div.wrapper-grid section.plats header:after,
-   #Menu div.wrapper-grid section.desserts header:after
-   {
+        div.wrapper-grid section.entrees header:after,
+        div.wrapper-grid section.plats header:after,
+        div.wrapper-grid section.desserts header:after
+        {
 
         content: ""; /* This is necessary for the pseudo element to work. */ 
         display: block; /* This will put the pseudo element on its own line. */
@@ -204,31 +213,34 @@ img {
         width: 13%; /* Change this to whatever width you want. */
         padding-top: 20px; /* This creates some space between the element and the border. */
         border-bottom: 3px solid $tertiary-color; /* This creates the border. Replace black with whatever color you want.*/
-   }
+
+        
+        }
    
   
-   #Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
-   #Menu div.wrapper-grid section.desserts div.card{
+        div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
+        div.wrapper-grid section.desserts div.card{
 
         background-color: $card-background-color;
         margin-bottom: 0.5rem;
         border-radius: 19px;
         padding: 0.9rem;
 
-   }
+        }
 
 
-   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
-   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
-   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description{
+        div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
+        div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
+        div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description{
 
         display: flex;
         justify-content: space-between;
-   }
+
+        }
 
 
    
-  #Menu div.wrapper-grid button{
+        div.wrapper-grid button{
 
         border-radius: 30px;
         padding: 0.7rem 2.9rem 0.7rem 2.9rem;
@@ -240,28 +252,31 @@ img {
         box-shadow: 2px 2px 7px 0px #888888;
         border: 2px;
         
-   }
+        }
 
 
-   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
-   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
-   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title
-   {
+        div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
+        div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
+        div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title
+        {
 
         color: $darker-text-color;
         font-weight: map-get($font-weights, bold);
         font-size: medium;
     
-   }
+        }
 
-   #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
-   #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
-   #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
+        div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
+        div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
+        div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p{
 
         font-weight: map-get($font-weights, regular);
         font-size: 14px;
         padding-top: 0.3rem;
-   }
+
+        }
+
+    }   /*END OF #Menu */
 
 
     /*----------footer-----------*/  
@@ -274,51 +289,53 @@ img {
         color: $footer-text-color;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
+
+        ul li h2{
+    
+            font-family: 'Shrikhand', sans-serif;
+        }
         
-    }
+        ul li a{
     
-    .footer ul li h2{
+            color: $footer-text-color;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul li:first-child{
+
+            padding-bottom: 0.6rem;
+            font-size: small;
+            font-weight: map-get($font-weights, small);
+        }
+
+        ul li.button{
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.1rem;
+            font-size: medium;
+            font-weight: map-get($font-weights, regular);
+        }
     
-        font-family: 'Shrikhand', sans-serif;
-    }
-    
-    .footer ul li a{
-    
-        color: $footer-text-color;
-        font-family: 'Roboto', sans-serif;
-    }
+    } /*END OF .footer*/
 
-    .footer ul li:first-child{
-
-        padding-bottom: 0.6rem;
-        font-size: small;
-        font-weight: map-get($font-weights, small);
-    }
-
-    .footer ul li.button{
-
-        padding-top: 0.5rem;
-        padding-bottom: 0.1rem;
-        font-size: medium;
-        font-weight: map-get($font-weights, regular);
-    }
    
+    footer{   
     
     
-    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
+        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
 
         padding-right: 1rem;
         font-size: small;
-    }
+        }
 
-    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
+        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
 
         padding-right: 1rem;
         font-size: small;
 
-    }
+        }
 
-    
+    } /*END OF footer*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
 @media all and (min-width: 401px) and (max-width:760px) {
@@ -335,32 +352,41 @@ img {
 
     /*------------mainContent------------*/
 
-    #Menu header i.far.fa-heart{
+    #Menu{
+
+
+        header i.far.fa-heart{
 
         margin-right: 1rem;
-    }
 
-    #Menu div.wrapper-grid section.entrees header::after, 
-    #Menu div.wrapper-grid section.plats header::after, 
-    #Menu div.wrapper-grid section.desserts header::after{
+        }
 
-        margin-right: 21.5rem;
-    }
+        div.wrapper-grid section.entrees header::after, 
+        div.wrapper-grid section.plats header::after, 
+        div.wrapper-grid section.desserts header::after{
 
-    #Menu div.wrapper-grid section.entrees div.card,
-    #Menu div.wrapper-grid section.plats div.card,
-    #Menu div.wrapper-grid section.desserts div.card
-    {
+            margin-right: 21.5rem;
+        }
 
-        margin-right: 1rem;
-    }
+        div.wrapper-grid section.entrees div.card,
+        div.wrapper-grid section.plats div.card,
+        div.wrapper-grid section.desserts div.card
+        {
 
-    #Menu div.wrapper-grid button{
+            margin-right: 1rem;
+        }
+
+        div.wrapper-grid button{
 
         margin: 3rem 3rem 5.5rem 4.5rem;
-    }
 
-}    
+        }
+
+
+    } /*END OF #Menu*/
+
+
+}    /*END OF MEDIA QUERY*/
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
@@ -401,41 +427,47 @@ img {
         /*----------mainContent-----------*/
 
         
-        #Menu header i.far.fa-heart{
+        #Menu{
 
-            margin-right: 2rem;
-        }
 
-        
-        #Menu div.wrapper-grid section.entrees header:after,        
-        #Menu div.wrapper-grid section.desserts header:after{
+            header i.far.fa-heart{
 
-            margin-left: -8rem;
-            margin-right: 42.9rem;
-            width: 10%;
+                margin-right: 2rem;
+            }
+
             
-        }
+            div.wrapper-grid section.entrees header:after,        
+            div.wrapper-grid section.desserts header:after{
 
-        #Menu div.wrapper-grid section.plats header:after{
+                margin-left: -8rem;
+                margin-right: 42.9rem;
+                width: 10%;
+                
+            }
 
-            margin-right: 45rem;
-            margin-left: -3rem;
-            width: 20%;
+            div.wrapper-grid section.plats header:after{
 
-        }
-        #Menu div.wrapper-grid section.entrees div.card,
-        #Menu div.wrapper-grid section.plats div.card,
-        #Menu div.wrapper-grid section.desserts div.card
-        {
-            margin-right: 2rem;
-        }
+                margin-right: 45rem;
+                margin-left: -3rem;
+                width: 20%;
+
+            }
+
+            div.wrapper-grid section.entrees div.card,
+            div.wrapper-grid section.plats div.card,
+            div.wrapper-grid section.desserts div.card
+            {
+                margin-right: 2rem;
+            }
 
       
 
-        #Menu div.wrapper-grid button{
+            div.wrapper-grid button{
 
-            margin: 3rem 3rem 5.5rem 15rem;
-        }
+                margin: 3rem 3rem 5.5rem 15rem;
+            }
+
+    } /*END OF #Menu*/
 
 
         /*-----------footer-------------*/
@@ -444,7 +476,13 @@ img {
 
             display: flex;
             justify-content: center;    
-           }
+
+            ul li h2{
+    
+                font-size: 250%;
+            }  
+
+           } /*END OF .footer*/
  
 
         footer.wrapper div.container{
@@ -454,12 +492,9 @@ img {
             
             }
     
-        .footer ul li h2{
-    
-                font-size: 250%;
-            }  
 
-}
+
+        } /*END OF MEDIA QUERY*/
 
 
 
@@ -499,32 +534,37 @@ img {
 
       /*--------------mainContent------------*/
 
-      #Menu header{
+      #Menu{
 
-        margin-right: 3rem;
-        margin-left: 1rem;
-    }
+            header{
 
-    #Menu div.wrapper-grid button{
+                margin-right: 3rem;
+                margin-left: 1rem;
+            }
 
-    margin: 3rem 1rem 5.5rem 36rem;
-    font-size: x-large;
+            div.wrapper-grid button{
 
-    }
+            margin: 3rem 1rem 5.5rem 36rem;
+            font-size: x-large;
 
-    #Menu div.wrapper-grid section.entrees header::after,
-    #Menu div.wrapper-grid section.plats header::after,
-     #Menu div.wrapper-grid section.desserts header::after{
+            }
 
-       content: "";
-       display: block;
-       margin-right: 84rem;
-       margin-left: -8rem;
-       margin-top: 0.5rem;
-       width: 5%;
-       padding-top: 20px;
-       border-bottom: 3px solid #99E2D0;
-   }
+            div.wrapper-grid section.entrees header::after,
+            div.wrapper-grid section.plats header::after,
+            div.wrapper-grid section.desserts header::after{
+
+            content: "";
+            display: block;
+            margin-right: 84rem;
+            margin-left: -8rem;
+            margin-top: 0.5rem;
+            width: 5%;
+            padding-top: 20px;
+            border-bottom: 3px solid #99E2D0;
+            }
+
+
+    }  /*END OF #Menu*/
 
 
     /*-----------footer-------------*/
@@ -541,22 +581,27 @@ img {
         justify-content: center;  
     }
 
-    #mentionsLegales ul li h2{
+    #mentionsLegales{
 
-        font-size: 400%;
-        
-    }
+             ul li h2{
 
-    #mentionsLegales ul li.button{
+                font-size: 400%;
+                    
+             }
 
-        font-size: 200%;
-    }
+            ul li.button{
+
+            font-size: 200%;
+
+             }
 
    
-    #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
-    #mentionsLegales ul li.button a i.fas.fa-utensils::before{
+            ul li.button a i.fas.fa-hands-helping::before,
+            ul li.button a i.fas.fa-utensils::before{
 
-        font-size: 200%;
-    }
+                font-size: 200%;
+            }
 
-}
+    } /*END OF #mentionsLegales*/
+
+   } /*END OF MEDIA QUERY*/

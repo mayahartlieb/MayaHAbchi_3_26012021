@@ -88,29 +88,24 @@ header nav ul li.logo {
   align-items: center;
   justify-content: space-between;
 }
-
 #Menu > header:nth-child(1) > h1:nth-child(1) {
   color: black;
   font-family: "Shrikhand", sans-serif;
   font-weight: 700;
 }
-
 #Menu header {
   padding-top: 1.8rem;
   font-size: large;
   font-weight: 500;
 }
-
 #Menu header i.far.fa-heart {
   font-size: x-large;
   padding-right: 0.9rem;
   color: #808080;
 }
-
 #Menu div.wrapper-grid section.entrees header {
   padding-top: 1rem;
 }
-
 #Menu div.wrapper-grid section.entrees header,
 #Menu div.wrapper-grid section.plats header,
 #Menu div.wrapper-grid section.desserts header {
@@ -118,7 +113,6 @@ header nav ul li.logo {
   font-size: medium;
   margin-bottom: 0.9rem;
 }
-
 #Menu div.wrapper-grid section.entrees header:after,
 #Menu div.wrapper-grid section.plats header:after,
 #Menu div.wrapper-grid section.desserts header:after {
@@ -137,22 +131,19 @@ header nav ul li.logo {
   border-bottom: 3px solid #99E2D0;
   /* This creates the border. Replace black with whatever color you want.*/
 }
-
-#Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
+#Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu #Menu div.wrapper-grid section.plats div.card div.card__body,
 #Menu div.wrapper-grid section.desserts div.card {
   background-color: #FFFFFF;
   margin-bottom: 0.5rem;
   border-radius: 19px;
   padding: 0.9rem;
 }
-
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description,
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description,
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description {
   display: flex;
   justify-content: space-between;
 }
-
 #Menu div.wrapper-grid button {
   border-radius: 30px;
   padding: 0.7rem 2.9rem 0.7rem 2.9rem;
@@ -164,7 +155,6 @@ header nav ul li.logo {
   box-shadow: 2px 2px 7px 0px #888888;
   border: 2px;
 }
-
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 h3.card__title,
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 h3.card__title,
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 h3.card__title {
@@ -172,7 +162,6 @@ header nav ul li.logo {
   font-weight: 700;
   font-size: medium;
 }
-
 #Menu div.wrapper-grid section.entrees div.card div.card__body div.card_body_part1 div.card__description p,
 #Menu div.wrapper-grid section.plats div.card div.card__body div.card_body_part1 div.card__description p,
 #Menu div.wrapper-grid section.desserts div.card div.card__body div.card_body_part1 div.card__description p {
@@ -181,6 +170,7 @@ header nav ul li.logo {
   padding-top: 0.3rem;
 }
 
+/*END OF #Menu */
 /*----------footer-----------*/
 .footer {
   background-color: #353535;
@@ -190,22 +180,18 @@ header nav ul li.logo {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
-
 .footer ul li h2 {
   font-family: "Shrikhand", sans-serif;
 }
-
 .footer ul li a {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
 }
-
 .footer ul li:first-child {
   padding-bottom: 0.6rem;
   font-size: small;
   font-weight: 300;
 }
-
 .footer ul li.button {
   padding-top: 0.5rem;
   padding-bottom: 0.1rem;
@@ -213,16 +199,17 @@ header nav ul li.logo {
   font-weight: 400;
 }
 
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils {
+/*END OF .footer*/
+footer .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils {
+  padding-right: 1rem;
+  font-size: small;
+}
+footer .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
   padding-right: 1rem;
   font-size: small;
 }
 
-footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
-  padding-right: 1rem;
-  font-size: small;
-}
-
+/*END OF footer*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 401px) and (max-width: 760px) {
@@ -239,23 +226,23 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   #Menu header i.far.fa-heart {
     margin-right: 1rem;
   }
-
   #Menu div.wrapper-grid section.entrees header::after,
 #Menu div.wrapper-grid section.plats header::after,
 #Menu div.wrapper-grid section.desserts header::after {
     margin-right: 21.5rem;
   }
-
   #Menu div.wrapper-grid section.entrees div.card,
 #Menu div.wrapper-grid section.plats div.card,
 #Menu div.wrapper-grid section.desserts div.card {
     margin-right: 1rem;
   }
-
   #Menu div.wrapper-grid button {
     margin: 3rem 3rem 5.5rem 4.5rem;
   }
+
+  /*END OF #Menu*/
 }
+/*END OF MEDIA QUERY*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 761px) and (max-width: 1024px) {
@@ -287,45 +274,43 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   #Menu header i.far.fa-heart {
     margin-right: 2rem;
   }
-
   #Menu div.wrapper-grid section.entrees header:after,
 #Menu div.wrapper-grid section.desserts header:after {
     margin-left: -8rem;
     margin-right: 42.9rem;
     width: 10%;
   }
-
   #Menu div.wrapper-grid section.plats header:after {
     margin-right: 45rem;
     margin-left: -3rem;
     width: 20%;
   }
-
   #Menu div.wrapper-grid section.entrees div.card,
 #Menu div.wrapper-grid section.plats div.card,
 #Menu div.wrapper-grid section.desserts div.card {
     margin-right: 2rem;
   }
-
   #Menu div.wrapper-grid button {
     margin: 3rem 3rem 5.5rem 15rem;
   }
 
+  /*END OF #Menu*/
   /*-----------footer-------------*/
   .footer {
     display: flex;
     justify-content: center;
   }
+  .footer ul li h2 {
+    font-size: 250%;
+  }
 
+  /*END OF .footer*/
   footer.wrapper div.container {
     display: flex;
     justify-content: center;
   }
-
-  .footer ul li h2 {
-    font-size: 250%;
-  }
 }
+/*END OF MEDIA QUERY*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 1025px) and (max-width: 1600px) {
@@ -354,12 +339,10 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     margin-right: 3rem;
     margin-left: 1rem;
   }
-
   #Menu div.wrapper-grid button {
     margin: 3rem 1rem 5.5rem 36rem;
     font-size: x-large;
   }
-
   #Menu div.wrapper-grid section.entrees header::after,
 #Menu div.wrapper-grid section.plats header::after,
 #Menu div.wrapper-grid section.desserts header::after {
@@ -373,6 +356,7 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
     border-bottom: 3px solid #99E2D0;
   }
 
+  /*END OF #Menu*/
   /*-----------footer-------------*/
   .footer {
     display: flex;
@@ -387,13 +371,14 @@ footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-han
   #mentionsLegales ul li h2 {
     font-size: 400%;
   }
-
   #mentionsLegales ul li.button {
     font-size: 200%;
   }
-
   #mentionsLegales ul li.button a i.fas.fa-hands-helping::before,
 #mentionsLegales ul li.button a i.fas.fa-utensils::before {
     font-size: 200%;
   }
-}/*# sourceMappingURL=laNoteEnchantee.css.map */
+
+  /*END OF #mentionsLegales*/
+}
+/*END OF MEDIA QUERY*//*# sourceMappingURL=laNoteEnchantee.css.map */
