@@ -218,7 +218,8 @@ img {
         }
    
   
-        div.wrapper-grid section.entrees div.card div.card__body, #Menu div.wrapper-grid section.plats div.card div.card__body,
+        div.wrapper-grid section.entrees div.card div.card__body,
+        div.wrapper-grid section.plats div.card div.card__body,
         div.wrapper-grid section.desserts div.card{
 
         background-color: $card-background-color;
@@ -319,23 +320,14 @@ img {
     } /*END OF .footer*/
 
    
-    footer{   
-    
-    
-        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
-
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
+        
         padding-right: 1rem;
         font-size: small;
-        }
+    }
 
-        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
 
-        padding-right: 1rem;
-        font-size: small;
-
-        }
-
-    } /*END OF footer*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/    
 @media all and (min-width: 401px) and (max-width:760px) {

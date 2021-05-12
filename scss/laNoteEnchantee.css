@@ -131,7 +131,8 @@ header nav ul li.logo {
   border-bottom: 3px solid #99E2D0;
   /* This creates the border. Replace black with whatever color you want.*/
 }
-#Menu div.wrapper-grid section.entrees div.card div.card__body, #Menu #Menu div.wrapper-grid section.plats div.card div.card__body,
+#Menu div.wrapper-grid section.entrees div.card div.card__body,
+#Menu div.wrapper-grid section.plats div.card div.card__body,
 #Menu div.wrapper-grid section.desserts div.card {
   background-color: #FFFFFF;
   margin-bottom: 0.5rem;
@@ -200,16 +201,12 @@ header nav ul li.logo {
 }
 
 /*END OF .footer*/
-footer .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils {
-  padding-right: 1rem;
-  font-size: small;
-}
-footer .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
   padding-right: 1rem;
   font-size: small;
 }
 
-/*END OF footer*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media all and (min-width: 401px) and (max-width: 760px) {

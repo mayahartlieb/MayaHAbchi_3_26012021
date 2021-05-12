@@ -309,25 +309,16 @@ img {
         
     } /*END OF .footer */
 
+
     
-    
-    footer{
-    
-        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils{
+   
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-utensils,
+    footer.wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping {
+        
+        padding-right: 1rem;
+        font-size: small;
+    }
 
-            padding-right: 1rem;
-            font-size: small;
-        }
-
-        .wrapper div.container section#mentionsLegales ul li.button a i.fas.fa-hands-helping{
-
-            padding-right: 1rem;
-            font-size: small;
-
-        }
-
-
-    } /*END OF footer */
 
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
